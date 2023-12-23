@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <img class="hamburger" src="images/icon-menu.svg" alt="" />
+      <nav>
+        <img class="logo" src="images/logo.svg" alt="" />
+        <div class="nav-links">
+          <ul class="nav-links-container mobile-hidden">
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-personal-info">
+          <img class="nav-cart-img" src="images/icon-cart.svg" alt="" />
+          <div class="items-count">0</div>
+          <div class="nav-cart hidden">
+            <p>Cart</p>
+            <div class="nav-cart-items">
+              <span>Your cart is empty.</span>
+            </div>
+          </div>
+          <img class="user" src="images/image-avatar.png" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="item">
+        <div class="item-hero"></div>
+        <div class="item-thumbnails">
+          <img
+            class="thumbnails selected"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnails"
+            src="images/image-product-2-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnails"
+            src="images/image-product-3-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnails"
+            src="images/image-product-4-thumbnail.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- FOR THE MODAL PART -->
+      <div class="modal hidden">
+        <img class="close-btn" src="images/icon-close.svg" alt="" />
+        <!-- <img class="left" src="images/icon-previous.svg" alt="" /> -->
+        <div class="left-container">
+          <img class="left" src="images/icon-previous.svg" />
+        </div>
+        <div class="modal-item-hero"></div>
+        <div class="right-container">
+          <img class="right" src="images/icon-next.svg" alt="" />
+        </div>
+
+        <div class="item-thumbnails">
+          <img
+            class="thumbnails"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnails"
+            src="images/image-product-2-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnails"
+            src="images/image-product-3-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnails"
+            src="images/image-product-4-thumbnail.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+      <!-- ENDS HERE -->
+      <div class="item-desc">
+        <h3 class="item-company">Sneaker Company</h3>
+        <h1 class="item-name">Fall Limited Edition Sneakers</h1>
+        <p class="item-report">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <h2 class="item-price">$125.00 <span>50%</span></h2>
+        <h4 class="item-previous-price">$250.00</h4>
+        <div class="item-action">
+          <div class="item-action-count">
+            <img class="minus" src="images/icon-minus.svg" alt="" />
+            <span class="counter">0</span>
+            <img class="plus" src="images/icon-plus.svg" alt="" />
+          </div>
+          <div class="item-action-btn">
+            <img src="images/icon-cart-1.svg" alt="" />
+            <span>Add to cart</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
